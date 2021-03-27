@@ -40,7 +40,7 @@ const api = {
     humidity.innerHTML = `<span>Humidity: </span>${weather.main.humidity}<span>%</span>`;
 
     let high = document.querySelector('#high');
-    high.innerHTML = `<span>High </span>${Math.round(weather.main.temp_max)}<span>°C</span>`;
+    high.innerHTML = `<span>High: </span>${Math.round(weather.main.temp_max)}<span>°C</span>`;
 
     let low = document.querySelector('#low');
     low.innerHTML = `<span>Low: </span>${Math.round(weather.main.temp_min)}<span>°C</span>`;
