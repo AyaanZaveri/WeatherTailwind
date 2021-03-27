@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; 
+
 * {
   margin: 0;
   padding: 0;
@@ -141,15 +145,15 @@ main {
   font-family: 'Raleway', sans-serif;
 }
 
-.current .weather {;
+.current .weather {
   color: #313131;
-  font-size: 30px
+  font-size: 30px;
 }
 
-.current .fl {;
+.current .fl {
   margin-top: 5px;
   color: #313131;
-  font-size: 20px
+  font-size: 20px;
 }
 
 .current .icon {

@@ -1,3 +1,5 @@
+import "tailwindcss/tailwind.css"
+
 const api = {
   key: "c204db8646efd8ade5a73f313178d133",
   base: "https://api.openweathermap.org/data/2.5/"
