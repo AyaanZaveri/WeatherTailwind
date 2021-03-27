@@ -1,0 +1,42 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Widgets</title>
+  <link rel="icon" href="https://bmcdn.nl/assets/weather-icons/v1.4.1/clear-day.svg" id="favicon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://pro.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+  </head>
+  
+<body>
+  <div>
+  <input id="search-box" autocomplete="off" placeholder="Search..." class="focus:outline-none ml-auto mr-auto w-72 block font-sans shadow-2xl bg-gray-700 hover:bg-gray-100 hover:text-gray-700 transition-colors duration-500 ease-in-out text-white p-4 m-6 font-bold rounded-md">
+  </div>
+  <div class="ml-auto	mr-auto w-72 block bg-gray-700 h-96 font-sans text-white rounded-xl shadow-2xl mt-5 hover:bg-gray-100 hover:text-gray-700 transition-colors duration-500 ease-in-out">
+    <div id="cityname" class="font-sans font-bold text-center text-2xl pt-10">City</div>
+    <div id="temp" class="font-sans font-bold text-center text-4xl pt-10">10<span>°C</span></div>
+    <div id="weather" class="font-sans font-bold text-center text-3xl pt-7">Sunny</div>
+    <div id="feelslike" class="font-sans font-bold text-center text-xl pt-5"><span>Feels Like: </span>10<span>°C</span></div>
+    <img id="icon" class="w-14 h-14 ml-auto	mr-auto block m-5 rounded-xl deep-shadow-inner bg-gray-700 hover:shadow-inner transition-colors duration-500 ease-in-out" src="https://bmcdn.nl/assets/weather-icons/v1.4.1/clear-day.svg">
+  </div>
+
+  <div class="left-56 right-0 absolute -mt-80 w-72 block bg-gray-700 h-72 font-sans text-white rounded-xl shadow-2xl hover:bg-gray-100 hover:text-gray-700 transition-colors duration-500 ease-in-out">
+    <div class="font-sans font-bold text-center text-xl paddingtop27" id="humidity"><span>Humidity: </span>75<span>%</span></div>
+    <div class="font-sans font-bold text-center text-xl paddingtop27" id="high"><span>High: </span>8<span>°C</span></div>
+    <div class="font-sans font-bold text-center text-xl paddingtop27" id="low"><span>Low: </span>12<span>°C</span></div>
+  </div>
+
+  <div class="right-56 absolute -mt-80 w-72 block bg-gray-700 h-72 font-sans text-white rounded-xl shadow-2xl hover:bg-gray-100 hover:text-gray-700 transition-colors duration-500 ease-in-out">
+    <div id="wind" class="font-sans font-bold text-center text-xl paddingtop27 pl-8"><span>Wind: </span>10<span> km/h</span></div>
+    <div class="font-sans font-bold text-center text-xl paddingtop27 pl-8" id="sunrise"><span>Sunrise: </span>7:00</div>
+    <div class="font-sans font-bold text-center text-xl paddingtop27 pl-8" id="sunset"><span>Sunset: </span>19:00</div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="w-12 h-12 block absolute top-8 ml-5 rounded-xl bg-gray-700 deep-shadow-inner hover:shadow-inner transition-colors duration-500 ease-in-out"><g><path fill="none" stroke="#e5e7eb" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M43.64 20a5 5 0 113.61 8.46h-35.5M29.14 44a5 5 0 103.61-8.46h-21"/><animateTransform attributeName="transform" dur="2s" repeatCount="indefinite" type="translate" values="-8 2; 0 -2; 8 0; 0 1; -8 2"/></g></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="w-12 h-12 block absolute top26 ml-5 rounded-xl bg-gray-700 deep-shadow-inner hover:shadow-inner transition-colors duration-500 ease-in-out"><defs><clipPath id="a"><path fill="none" d="M0 7.5h64v32H0z"/></clipPath></defs><g clip-path="url(#a)"><g><path fill="#f59e0b" d="M32 30.36A8.64 8.64 0 1123.36 39 8.66 8.66 0 0132 30.36m0-3A11.64 11.64 0 1043.64 39 11.64 11.64 0 0032 27.36z"/><path fill="none" stroke="#f59e0b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M32 22.71V16.5M32 61.5v-6.21M43.52 27.48l4.39-4.39M16.09 54.91l4.39-4.39M20.48 27.48l-4.39-4.39M47.91 54.91l-4.39-4.39M15.71 39H9.5M54.5 39h-6.21"/><animateTransform attributeName="transform" dur="45s" from="0 32 39" repeatCount="indefinite" to="360 32 39" type="rotate"/></g></g><path fill="none" stroke="rgb(229, 231, 235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 42.5h11l5-4.5 5 4.5h11"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="w-12 h-12 block absolute top-44 ml-5 rounded-xl bg-gray-700 deep-shadow-inner hover:shadow-inner transition-colors duration-500 ease-in-out"><defs><clipPath id="a"><path fill="none" d="M0 7.5h64v32H0z"/></clipPath></defs><g clip-path="url(#a)"><g><path fill="#f59e0b" d="M32 30.36A8.64 8.64 0 1123.36 39 8.66 8.66 0 0132 30.36m0-3A11.64 11.64 0 1043.64 39 11.64 11.64 0 0032 27.36z"/><path fill="none" stroke="#f59e0b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M32 22.71V16.5M32 61.5v-6.21M43.52 27.48l4.39-4.39M16.09 54.91l4.39-4.39M20.48 27.48l-4.39-4.39M47.91 54.91l-4.39-4.39M15.71 39H9.5M54.5 39h-6.21"/><animateTransform attributeName="transform" dur="45s" from="0 32 39" repeatCount="indefinite" to="360 32 39" type="rotate"/></g></g><path fill="none" stroke="rgb(229, 231, 235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 42.5h11l5 4.5 5-4.5h11"/></svg>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</div>
+</html>
