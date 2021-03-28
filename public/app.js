@@ -22,7 +22,7 @@ const api = {
   function displayResults(weather) {
  
     let temp = document.querySelector('#temp');
-    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
+    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°C</span>`;
 
     let city = document.querySelector('#cityname');
     city.innerText = `${weather.name}, ${weather.sys.country}`;
