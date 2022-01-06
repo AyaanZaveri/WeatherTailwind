@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.deep-shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.paddingtop27 {
+  padding-top: 2.7rem;
+}
+.top26 {
+  top: 6.5rem;
+}
+.left4375 {
+  left: -43.75rem;
+}
+.left4375pos {
+  left: 43.75rem;
+}
